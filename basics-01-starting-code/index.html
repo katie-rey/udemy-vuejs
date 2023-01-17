@@ -21,6 +21,15 @@
       <p>{{ courseGoal }}</p>
       <!-- interpolation  -->
       <!-- Data binding  -->
+      <!-- can reference what is being returned in the vue data object  -->
+      <!-- v-bind : bind or set a value of a html element attribute (the href attribute)-->
+      <p>Learn more <a v-bind:href="vueLink">about vue</a></p>
+      <p>{{ outputGoal() }}</p>
+      <p v-html="outputGoal()"></p>
     </section>
   </body>
 </html>
+
+<!-- one vueApp controls the html section and all children -->
+
+<!--  vue uses a declarative approach, we declare our goal, not the steps of getting there -->
