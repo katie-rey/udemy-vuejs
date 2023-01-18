@@ -26,6 +26,11 @@
       <!-- or -->
       <button v-on:click=" minus ">Remove</button>
       <p>Result: {{ counter }}</p>
+      <input type="text" v-on:input=" setName " />
+      <p>Your name: {{ name }}</p>
+      <input type="text" v-on:input=" setNameWithLast($event, 'Rey') " />
+      <p>Your name: {{ nameLast }}</p>
+      <!-- here I am accessing the event object but also passing in an argument  -->
     </section>
   </body>
 </html>
